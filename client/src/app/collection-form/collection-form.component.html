@@ -1,0 +1,15 @@
+<form>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description"  name="description" [(ngModel)]="collectionObject.description">
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" class="form-control" id="type" name="type" [(ngModel)]="collectionObject.type">
+    </div>
+
+    <button type="submit" class="btn btn-default" (click)="addToCollection(collectionObject)">Submit</button>
+    <button type="button" class="btn btn-default" (click)="close()" >Cancel</button>
+  </div>
+</form>

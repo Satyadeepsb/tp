@@ -1,0 +1,39 @@
+<!--<div class="row">
+  &lt;!&ndash;<img [src]="img" style="height: 100px;width: 100px" class="img-responsive">&ndash;&gt;
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of collectables">
+        <span class="badge">{{item.type}}</span>
+        <button class="btn btn-success" (click)="onAddToCollection(item)">Add To Collection</button>&nbsp;
+        <button class="btn btn-success" (click)="onEditCollection(item)">Edit Collection</button>&nbsp;
+        {{item.description}}
+      </li>
+    </ul>
+  </div>
+</div>-->
+
+<div class="row">
+  <button class="btn btn-default pull-right" (click)=showConfirm()>Add New</button>
+  <table class="table table-responsive table-hover">
+    <thead>
+    <tr>
+    <td>Description</td>
+    <td>Type</td>
+    <td>Add To Collection</td>
+    <td>Edit Collection</td>
+    <td> Delete Collection</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  *ngFor="let item of collectables">
+      <td>{{item.description}}</td>
+      <td>{{item.type}}</td>
+      <td><button class="btn btn-success" (click)="onAddToCollection(item)">Add To Collection</button></td>
+      <td> <button class="btn btn-warning" (click)="editItem(item)">Edit Collection</button></td>
+      <td> <button class="btn btn-danger" (click)="removeItem(item)">Delete Collection</button></td>
+      <td></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

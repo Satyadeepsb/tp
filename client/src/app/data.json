@@ -1,0 +1,6 @@
+[
+  {"description" : "A very rare copy of JQuery Book" , "type" : "Book"},
+  {"description" : "The first letter ever" , "type" : "Piece of Paper"},
+  {"description" : "A photo showing nothing" , "type" : "Photo"},
+  {"description" : "a box with solid zune" , "type" : "Garbage"}
+]
